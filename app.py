@@ -1,10 +1,13 @@
 # app.py
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # <-- novo import
 import numpy as np
 from scipy.optimize import minimize
 import json
 
 app = Flask(__name__)
+CORS(app)  # <-- permite qualquer origem (para testes)
+
 
 # ---------- FUNÇÕES DO SEU PROGRAMA (COPIADAS INTEGRALMENTE) ----------
 def recalcular_FeOtotal(FeOtotal):
