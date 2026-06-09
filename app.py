@@ -3,7 +3,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS  # <-- NOVO
 import numpy as np
 from scipy.optimize import minimize
-import jsonfrom flask import Flask, request, jsonify, send_file
+import json
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import numpy as np
 from scipy.optimize import minimize
