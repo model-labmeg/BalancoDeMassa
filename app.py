@@ -1,12 +1,14 @@
 # app.py
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # <-- novo import
+from flask_cors import CORS  # <-- NOVO
 import numpy as np
 from scipy.optimize import minimize
 import json
+import os  # <-- NOVO (para a porta)
 
 app = Flask(__name__)
-CORS(app)  # <-- permite qualquer origem (para testes)
+CORS(app)  # <-- NOVO: permite requisições de qualquer origem
+
 
 
 # ---------- FUNÇÕES DO SEU PROGRAMA (COPIADAS INTEGRALMENTE) ----------
